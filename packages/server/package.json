@@ -1,0 +1,27 @@
+{
+  "name": "@impropster/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "smoke": "tsx scripts/smoke.ts",
+    "bots": "tsx scripts/bots.ts"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^5.0.0",
+    "@colyseus/ws-transport": "^0.18.4",
+    "@impropster/shared": "workspace:*",
+    "colyseus": "^0.18.0"
+  },
+  "devDependencies": {
+    "@colyseus/sdk": "^0.18.8",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

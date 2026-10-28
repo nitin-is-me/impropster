@@ -1,0 +1,23 @@
+{
+  "name": "impropster",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Impropster - a 2D top-down multiplayer Prop Hunt browser game",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @impropster/server --filter @impropster/client dev",
+    "dev:server": "pnpm --filter @impropster/server dev",
+    "dev:client": "pnpm --filter @impropster/client dev",
+    "build": "pnpm --filter @impropster/client build",
+    "start": "pnpm --filter @impropster/server start",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "verify": "pnpm run typecheck && pnpm run test && pnpm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

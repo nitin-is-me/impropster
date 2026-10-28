@@ -1,0 +1,10 @@
+packages:
+  - "packages/*"
+
+# Colyseus optionally depends on uWebSockets.js (git-based). pnpm >= 10.26 blocks
+# git subdependencies by default, which prevents installing the framework.
+allowBuilds:
+  esbuild: true
+  msgpackr-extract: true
+
+blockExoticSubdeps: false

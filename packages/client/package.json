@@ -1,0 +1,22 @@
+{
+  "name": "@impropster/client",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^5.0.0",
+    "@colyseus/sdk": "^0.18.0",
+    "@impropster/shared": "workspace:*",
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.1.0"
+  }
+}
